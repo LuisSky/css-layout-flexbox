@@ -64,3 +64,35 @@ header ul li:last-child {
     margin-bottom: 10px;
   }
 }
+
+.hero {
+  background-image: url(../public/img/hero.jpg);
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+}
+
+.hero > h1 {
+  margin-bottom: 5px;
+  font-size:xx-large;  
+}
+
+.hero > h3 {
+  font-size: x-large;
+}
+
+.hero .btn {
+  margin-top: 30px;
+  padding: 15px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #191c03;
+  background-color:azure;
+  text-transform: uppercase;
+}
+
