@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
+  padding: 10px 15px;
   background-color: azure;
 }
 
@@ -66,6 +66,7 @@ header ul li:last-child {
 }
 
 .hero {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-image: url(../public/img/hero.jpg);
   background-size: cover;
   width: 100%;
@@ -75,14 +76,15 @@ header ul li:last-child {
   justify-content: center;
   align-items: center;
   color: azure;
+  text-align: center;
 }
 
-.hero > h1 {
+.hero h1 {
   margin-bottom: 5px;
   font-size:xx-large;  
 }
 
-.hero > h3 {
+.hero h3 {
   font-size: x-large;
 }
 
@@ -96,3 +98,129 @@ header ul li:last-child {
   text-transform: uppercase;
 }
 
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: x-large;
+  }
+  
+  .hero h3 {
+    font-size: medium;
+  }
+  
+  .hero .btn {
+    padding: 10px 30px;
+    border-radius: 7px;
+  }
+}
+
+.know-us .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.know-us {
+  width: 98%;
+  display: flex;
+  margin-top: 60px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.presentation {
+  text-align: center;
+  width: 50%;
+}
+
+.know-us h1 {
+  font-family: Cookie;
+  margin-bottom: 10px;
+  font-size: 4.4rem;
+  color: #8fec9b;
+}
+
+.presentation > p {
+  font-size: larger;
+  color: #191c03;
+  margin-bottom: 30px;
+}
+
+.container > hr {
+  border-color: #87ed94;
+  opacity: 0.4;
+  align-self: center;
+  border-style:outset;  
+  width: 25%;
+  margin-bottom: 30px;
+}
+
+.pic-presentation, .sec-picture-container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.larger {
+  margin-left: 10px;
+  border-radius: 4px;
+  background-image: url(../public/img/itacare-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  flex-grow: 4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.small {
+  border-radius: 4px;
+  margin-left: 10px;
+  background-image: url(../public/img/itacare-01.jpg);
+  background-repeat: no-repeat;
+  height: 400px;
+  flex-grow: 3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sec-picture-container > .larger {
+  background-image: url(../public/img/itacare-03.jpg);
+}
+
+.sec-picture-container > .small {
+  background-image: url(../public/img/itacare-04.jpg);
+}
+
+
+@media (max-width: 700px) {
+  .know-us {
+    width: 100%;
+  }
+  .pic-presentation {
+    flex-direction: column;
+  }
+  .presentation > h1 {
+    font-size: 3.3rem;
+  }
+  .presentation > p {
+    font-size: 1.0rem;
+  }
+  .larger {
+    margin: 10px;
+  }
+  .small {
+    margin: 10px;
+  }
+}
+
+
+
+
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+  background-color: #191c03;
+}
