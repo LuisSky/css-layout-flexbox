@@ -16,7 +16,7 @@ a:hover {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -24,7 +24,7 @@ header {
   font-size: 1.2rem;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
+  padding: 10px 25px;
   background-color: azure;
 }
 
