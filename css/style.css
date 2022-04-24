@@ -10,6 +10,7 @@ a {
   cursor: pointer;
   opacity: 1;
 }
+
 a:hover {
   opacity: 0.7;
 }
@@ -20,15 +21,26 @@ header {
   left: 0;
   width: 100%;
   display: flex;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
   background-color: azure;
 }
 
-header img {
-  max-width: 200px;
+header .logo-nav {
+  display: flex;
+  align-items: center;
+}
+header .logo-nav img {
+  max-width: 50px;
+}
+
+header .logo-nav span {  
+  margin-left: 10px;
+  font-family: Cookie;
+  color: #f7bc70;
+  font-size: 2.3rem;
 }
 
 header ul {
@@ -42,7 +54,7 @@ header ul li {
   margin: 0 15px;
 }
 header ul li a {
-  color: #191c03;
+  color: #f7bc70;
 }
 
 header ul li:first-child {
@@ -90,12 +102,12 @@ header ul li:last-child {
 }
 
 .hero .btn {
+  font-size: 1.3rem;
   margin-top: 30px;
-  padding: 15px 50px;
+  padding: 20px 80px;
   border-radius: 10px;
-  text-decoration: none;
-  color: #191c03;
-  background-color:azure;
+  color: aliceblue;
+  background-color: #f7bc70;
   text-transform: uppercase;
 }
 
@@ -130,16 +142,17 @@ header ul li:last-child {
   text-align: center;
 }
 
-.presentation {
-  text-align: center;
-  width: 50%;
-}
 
 .know-us h1 {
   font-family: Cookie;
   margin-bottom: 10px;
   font-size: 4.8rem;
   color: #f7bc70;
+}
+
+.presentation {
+  text-align: center;
+  width: 50%;
 }
 
 .presentation > p {
@@ -202,10 +215,10 @@ header ul li:last-child {
     flex-direction: column;
   }
   .presentation > h1 {
-    font-size: 3.3rem;
+    font-size: 4.3rem;
   }
   .presentation > p {
-    font-size: 1.0rem;
+    font-size: 1.3rem;
   }
   .larger {
     margin: 10px;
@@ -221,6 +234,7 @@ section.features {
   flex-wrap: wrap;
   margin-top: 50px;
   width: 100%;
+  height: 100vh;
   background-color: #191c03;
   justify-content: center;
   padding: 1.5rem;
@@ -268,7 +282,6 @@ section.features hr {
 .features ul li a i{
   color: #f7bc70;
   margin-bottom: 20px;
-  text-decoration: none;
 }
 
 .features ul li h3 {
@@ -283,6 +296,9 @@ section.features hr {
 }
 
 @media (max-width: 750px) {
+  section.features {
+    height: auto;
+  }  
   .features ul {
     margin-top: 50px;
     flex-direction: column;
@@ -347,7 +363,7 @@ section.newsletter hr {
 .newsletter form input::placeholder {
   font-size: 1.2rem;
   color:#f7bc70;
-  opacity: 0.6; /* Firefox */
+  opacity: 0.6;
 }
 
 
@@ -359,6 +375,7 @@ section.newsletter hr {
   margin-left: 10px;
   border-radius: 4px;
   border: none;
+  text-transform: uppercase;
 }
 
 @media (max-width: 700px) {
@@ -384,18 +401,25 @@ section.newsletter hr {
 }
 
 
-
-
-
-
-
-
-
-
-
 footer {
-  margin-top: 300px;
   width: 100%;
   height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #191c03;
+  color: #f7bc70;
+}
+
+footer a {
+  margin: 0 15px;
+  font-size: xx-large;
+  color: #f7bc70;
+}
+
+footer span {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  opacity: 0.8;
 }
