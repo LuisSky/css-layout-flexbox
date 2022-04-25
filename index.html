@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS - Flexbox layout</title>
-  
   <script src="https://kit.fontawesome.com/23d495272e.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,26 +19,26 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-   <header>
+   <header class="header-nav">
     <div class="logo-nav">
       <img src="./public/img/logo-3.jpg" alt="logo">
       <span>Tropical Beach Hotel</span>
     </div>
     <ul>
-       <li><a href="#">Home</a></li>
-       <li><a href="#">Sobre</a></li>
-       <li><a href="#">Reservas</a></li>
-       <li><a href="#">Contato</a></li>
+       <li><a href="#hero">Home</a></li>
+       <li><a href="#about">Sobre</a></li>
+       <li><a href="#reservation">Reservas</a></li>
+       <li><a href="#contact">Contato</a></li>
     </ul>
    </header>
    
-   <section class="hero">
+   <section class="hero" id="hero">
     <h1>Conheça este paraiso tropical</h1>
     <h3>"Aconchego, conforto, simpatia e alto astral"</h3>
     <a href="#" class="btn">saiba mais</a>
    </section>
    
-   <section class="know-us">
+   <section class="know-us" id="about">
     <div class="container">
       <div class="presentation">
         <h1>Tropical Beach Hotel</h1>
@@ -57,7 +56,7 @@
     </div>
    </section>
    
-   <section class="features">
+   <section class="features" id="reservation">
     <h1>Ùnico hotel pé na areia do Brasil</h1>
     <p>Implantado em uma área completamente arborizada, o Hotel Paraiso é o único hotel pé na areia do Brasil.
     Aqui o Mar será seu companheiro e você terá as belezas da natureza como seu guia.</p>
@@ -98,7 +97,7 @@
     
    </section>
    
-   <section class="newsletter">
+   <section class="newsletter" id="contact">
      <h1>Newsletter</h1>
      <p>Assine nossa newletter para se manter atualizado com nossos serviços e a programação de nossos eventos
       culturais.</p>
@@ -119,5 +118,7 @@
     </div>
     <span>SKy @2022</span>
    </footer>
+   
+   <script src="./soft-scroll.js"></script>
 </body>
 </html>
